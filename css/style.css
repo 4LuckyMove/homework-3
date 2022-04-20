@@ -133,7 +133,8 @@ a {
 }
 
 .block-img {
-    width: 100%;
+    display: block;
+    max-width: max-content;
     align-self: center;
     box-shadow: 20px 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -310,6 +311,114 @@ a {
 .link-other-card a:hover {
     border-bottom: 1px solid #f16522;
     letter-spacing: 2px;
+}
+
+.footer {
+    background-color: #e7eaed;
+    padding: 40px 0;
+}
+
+.footer h3 {
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer .footer-logo h3 {
+    font-size: 24px;
+}
+
+.footer .footer-logo p {
+    line-height: 30px;
+}
+
+.footer .footer-logo a {
+    font-size: 12px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #f16522;
+}
+
+.footer .footer-logo a:hover {
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.footer .footer-address p,
+.footer .footer-telephone p {
+    line-height: 24px;
+}
+
+.footer .input-group-email {
+    margin: 15px 0;
+    display: flex;
+}
+
+.footer .input-group-email input {
+    padding: 8px 10px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.footer .input-group-email input:focus {
+    outline: none;
+}
+
+.footer .input-group-email input::placeholder {
+    color: #c4c4c4;
+}
+
+.footer .input-group-email button {
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: white;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.our-clients {
+    padding: 30px 0;
+}
+
+.our-clients .body-our-clients {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.our-clients .our-clients-title h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.our-clients .our-clients-title a {
+    font-size: 13px;
+    line-height: 21px;
+    color: #f16522;
+}
+
+.our-clients .our-clients-title a:hover {
+    border-bottom: 1px solid #f16522;
+}
+
+.our-clients .card-img img {
+    max-width: 100%;
+    filter: opacity(0.4);
 }
 
 @media(max-width: 1275px) {
